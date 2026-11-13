@@ -1,0 +1,31 @@
+# ==============================================================================
+# CLOUDFLARE PAGES - CABECERAS HTTP Y POLÍTICAS DE CACHÉ
+# ==============================================================================
+
+# Reglas de Seguridad Globales
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://wa.me; frame-ancestors 'none';
+
+# Control de Caché para Documentos HTML (Revalidación en tiempo real)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Control de Caché para Imágenes WebP y JPG (Inmutables por 1 año en Edge CDN)
+/fotos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Control de Caché para Estilos y Scripts (1 semana con revalidación suave)
+/*.css
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/*.js
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+

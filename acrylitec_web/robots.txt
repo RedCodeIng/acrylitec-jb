@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acrylitec.pages.dev/sitemap.xml
+

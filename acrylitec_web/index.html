@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrylitec | Objetos de Acrílico que Brillan con tu Historia</title>
+    
+    <!-- Metadatos de Rendimiento y SEO -->
+    <meta name="description" content="Diseño, corte láser y fabricación de piezas exclusivas en acrílico: letreros neón, portarretratos, exhibidores comerciales, decoración y regalos empresariales personalizados.">
+    <meta name="keywords" content="acrílico personalizado, letreros de acrílico, corte láser, portarretratos, exhibidores comerciales, urnas, Acrylitec México">
+    <meta name="author" content="Acrylitec México">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Acrylitec | Objetos de Acrílico que Brillan con tu Historia">
+    <meta property="og:description" content="Piezas únicas en acrílico con corte láser de alta precisión. Letreros, marcos, exhibidores y proyectos a la medida.">
+    <meta property="og:image" content="fotos/img-principal.webp">
+
+    <!-- Preconexión a Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de Estilos Optimizada y Modular -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4af37'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+    <!-- Barra de Progreso de Lectura Superior -->
+    <div id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- CABECERA PRINCIPAL (NAVBAR RESPONSIVA CON TEMA Y MÓVIL) -->
+    <header>
+        <a href="#inicio" class="logo-container" aria-label="Ir al inicio de Acrylitec">
+            <div class="logo-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            <div class="logo-text">Acryli<span>tec</span></div>
+        </a>
+
+        <!-- Navegación para Pantallas Grandes -->
+        <nav class="nav-desktop" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#galeria">Galería Exclusiva</a></li>
+                <li><a href="#cotizador">Cotizador</a></li>
+            </ul>
+        </nav>
+
+        <!-- Acciones: Selector de Tema y Botón Hamburguesa -->
+        <div class="header-actions">
+            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Cambiar a modo claro" title="Alternar modo claro / oscuro">
+                ☀️
+            </button>
+            <button id="hamburgerBtn" class="hamburger-btn" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Menú móvil">
+        <ul>
+            <li><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li><a href="#productos" class="mobile-nav-link">Productos</a></li>
+            <li><a href="#galeria" class="mobile-nav-link">Galería Exclusiva</a></li>
+            <li><a href="#cotizador" class="mobile-nav-link">Cotizador en Línea</a></li>
+        </ul>
+    </div>
+
+    <!-- SECCIÓN HERO REDISEÑADA (ESTÉTICA DE LUJO, BALANCEADA Y ACOGEDORA) -->
+    <section class="hero" id="inicio">
+        <div class="hero-content reveal">
+            <div class="hero-tag">
+                <span class="hero-tag-dot" aria-hidden="true"></span>
+                Taller Especializado & Manufactura Láser
+            </div>
+            <h1>Objetos que brillan con <span>tu historia.</span></h1>
+            <p>Transformamos polímeros de acrílico de alta pureza en creaciones excepcionales: letreros para empresas, portarretratos, decoración de interiores y soluciones industriales con precisión milimétrica.</p>
+            
+            <div class="hero-buttons">
+                <a href="#cotizador" class="btn-primary">Cotizar Proyecto en Línea →</a>
+                <a href="#galeria" class="btn-secondary">Explorar Galería</a>
+            </div>
+
+            <!-- Indicadores de Confianza Rápidos -->
+            <div class="hero-trust-list">
+                <div class="hero-trust-item"><span>✓</span> Corte Láser CNC ±0.1mm</div>
+                <div class="hero-trust-item"><span>✓</span> Envíos a todo México</div>
+                <div class="hero-trust-item"><span>✓</span> 100% Acrílico Grado Óptico</div>
+            </div>
+        </div>
+
+        <!-- Tarjeta Escaparate en Perspectiva -->
+        <div class="hero-showcase-wrapper reveal">
+            <div class="hero-card-frame">
+                <!-- Badges Flotantes -->
+                <div class="hero-badge-float badge-top-right">
+                    <span>✨</span> Acrílico Grado Óptico
+                </div>
+                <div class="hero-badge-float badge-bottom-left">
+                    <span>★</span> +500 Proyectos Fabricados
+                </div>
+
+                <div class="hero-card-img-box skeleton-box">
+                    <picture>
+                        <source srcset="fotos/img-principal.webp" type="image/webp">
+                        <img src="fotos/img-principal.jpg" alt="Acrylitec Creaciones de Acrílico Personalizadas" width="1800" height="1004" fetchpriority="high" decoding="async">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS -->
+    <section class="section" id="productos">
+        <div class="section-header reveal">
+            <span class="section-tag">Nuestras Líneas de Fabricación</span>
+            <h2 class="section-title">Todo lo que puedes crear en acrílico.</h2>
+        </div>
+        <div class="products-grid">
+            <div class="card reveal">
+                <div class="card-icon" aria-hidden="true">🏷️</div>
+                <h3>Letreros Personalizados</h3>
+                <p>Nombres, frases, siluetas y logotipos corporativos en acrílico cortado con precisión láser milimétrica e iluminación LED opcional.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon" aria-hidden="true">🖼️</div>
+                <h3>Portarretratos Flotantes</h3>
+                <p>Marcos elegantes con pernos de acero y placas de acrílico cristalino de alta transparencia que preservan tus momentos memorables.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon" aria-hidden="true">🔑</div>
+                <h3>Llaveros y Recuerdos</h3>
+                <p>Diseños conmemorativos con código Spotify, fotografías encapsuladas, fechas especiales o mensajes grabados para eventos y bodas.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon" aria-hidden="true">🏠</div>
+                <h3>Decoración del Hogar</h3>
+                <p>Piezas artísticas, botánicos de pared, lámparas de luz indirecta y mobiliario geométrico que transforman cualquier espacio residencial.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon" aria-hidden="true">🎁</div>
+                <h3>Regalos Empresariales</h3>
+                <p>Trofeos institucionales, placas conmemorativas, reconocimientos de honor y artículos promocionales con la identidad de tu marca.</p>
+            </div>
+            <div class="card reveal">
+                <div class="card-icon" aria-hidden="true">✨</div>
+                <h3>Arte y Cubiertas Especiales</h3>
+                <p>Proyectos de ingeniería a la medida: cubiertas de protección para maquinaria, urnas de seguridad, vitrinas y arte volumétrico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUEVA GALERÍA SPOTLIGHT INTERACTIVA Y SHOWCASE DESCRIPTIVO -->
+    <section class="galeria-custom-section" id="galeria">
+        <div class="custom-banner-box reveal">
+            <h3>✨ ¡Lo que se te ocurra se puede hacer en acrílico!</h3>
+            <p>No existen límites para la personalización y la ingeniería de materiales. Diseñamos y fabricamos proyectos únicos con tolerancias milimétricas. Explora a detalle cada proyecto en nuestro escaparate dinámico:</p>
+            <a href="#cotizador" class="btn-primary">Ir al Cotizador en Línea →</a>
+        </div>
+
+        <div class="section-header reveal" style="text-align: center; margin-bottom: 25px;">
+            <span class="section-tag">Portafolio & Acabados</span>
+            <h2 class="section-title">Escaparate de Creaciones Exclusivas</h2>
+        </div>
+
+        <!-- Filtros de Categorías -->
+        <div class="gallery-filters reveal">
+            <button class="gallery-filter-btn active" data-category="todos">Todos los Trabajos (8)</button>
+            <button class="gallery-filter-btn" data-category="comercial">Comercial & Negocios</button>
+            <button class="gallery-filter-btn" data-category="decoracion">Arquitectura & Hogar</button>
+            <button class="gallery-filter-btn" data-category="industrial">Industrial & Seguridad</button>
+            <button class="gallery-filter-btn" data-category="regalos">Regalos & Eventos</button>
+        </div>
+
+        <!-- Escenario Spotlight Maestro (Integra Fotografía + Historia y Especificaciones) -->
+        <div class="gallery-spotlight-stage reveal">
+            <!-- Ventana de Medios (Izquierda) -->
+            <div class="spotlight-media skeleton-box" id="spotlightMediaBox" title="Haz clic para ampliar la imagen">
+                <picture>
+                    <source id="spotlightPicSource" srcset="fotos/img1.webp" type="image/webp">
+                    <img id="spotlightImg" src="fotos/img1.jpg" alt="Mapa en Acrílico con Pernos de Acero" loading="lazy" decoding="async">
+                </picture>
+                <div class="spotlight-zoom-hint">
+                    🔍 Clic para ampliar
+                </div>
+            </div>
+
+            <!-- Ficha Técnica y Descriptiva (Derecha) -->
+            <div class="spotlight-details">
+                <div>
+                    <span class="spotlight-category-tag" id="spotlightCategory">Arquitectura & Decoración</span>
+                    <h3 class="spotlight-title" id="spotlightTitle">Mapas Geográficos de Lujo</h3>
+                    <p class="spotlight-desc" id="spotlightDesc">Cuadros artísticos en acrílico transparente de 6mm con pernos separadores de acero inoxidable y grabado láser milimétrico. Diseñados como piezas focales en recepciones ejecutivas, notarías o residencias.</p>
+                    
+                    <div class="spotlight-specs-box">
+                        <h5>Especificaciones Técnicas del Proyecto</h5>
+                        <ul class="spotlight-specs-list" id="spotlightSpecsList">
+                            <li>Acrílico cristal de 6mm de pureza óptica</li>
+                            <li>Corte y grabado láser de ultra-definición (±0.1 mm)</li>
+                            <li>Juego de 4 pernos separadores de acero inoxidable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="spotlight-actions-bar">
+                    <a id="spotlightBtnCotizar" href="#cotizador" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        Cotizar esta pieza →
+                    </a>
+
+                    <div class="spotlight-nav-controls">
+                        <button id="btnSpotlightPrev" class="spotlight-nav-btn" aria-label="Proyecto anterior">‹</button>
+                        <div class="spotlight-counter" id="spotlightCounter"><span>01</span> / 08</div>
+                        <button id="btnSpotlightNext" class="spotlight-nav-btn" aria-label="Proyecto siguiente">›</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tira de Miniaturas del Carrusel Inferior -->
+        <div class="gallery-carousel-wrapper reveal">
+            <div class="gallery-thumbnail-track" id="thumbnailTrack">
+                <!-- Miniaturas generadas dinámicamente por script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- COTIZADOR AUTOMÁTICO EN VIVO (MODELO MATEMÁTICO) -->
+    <section class="cotizador-section reveal" id="cotizador">
+        <div class="cotizador-form">
+            <span class="section-tag">Herramienta Interactiva</span>
+            <h2>Cotizador <span>Automático</span></h2>
+            <p class="cotizador-desc">Calcula en tiempo real un presupuesto estimado para tu proyecto de acrílico personalizado.</p>
+            
+            <div class="form-group">
+                <label for="tipoProducto">Tipo de Producto</label>
+                <select id="tipoProducto">
+                    <option value="350">Letrero / Cuadro / Mapa Personalizado ($350 MXN)</option>
+                    <option value="250">Portarretrato o Urna ($250 MXN)</option>
+                    <option value="120">Llavero Personalizado ($120 MXN)</option>
+                    <option value="600">Mueble / Exhibidor / Cubierta Industrial ($600 MXN)</option>
+                    <option value="450">Regalo / Caja Conmemorativa ($450 MXN)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="tamano">Tamaño o Dimensión</label>
+                <select id="tamano">
+                    <option value="1">Pequeño (Aprox. 15-20 cm)</option>
+                    <option value="1.5">Mediano (Aprox. 30-40 cm) [+50%]</option>
+                    <option value="2.2">Grande / Estructura Especial (Aprox. 50-80 cm) [+120%]</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cantidad">Cantidad de Piezas (Descuento del 10% a partir de 10 pzas)</label>
+                <input type="number" id="cantidad" value="1" min="1" max="500">
+            </div>
+        </div>
+
+        <div class="resultado-card">
+            <h3>Inversión Estimada</h3>
+            <div class="precio-final" id="precioTotal">$350.00 MXN</div>
+            <div id="badgeDescuento" class="descuento-badge" style="display: none;">🎉 10% Descuento Mayoreo Aplicado</div>
+            <p class="precio-aviso">*Costo estimado de referencia. Sujeto a confirmación de especificaciones técnicas.</p>
+            
+            <div class="resultado-actions">
+                <a id="btnWhatsAppCotizacion" href="#" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.84a8.19 8.19 0 0 1-5.82 2.41c-1.45 0-2.88-.38-4.14-1.11l-.3-.17-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.25-4.44c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.25-1.5-1.4-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+                    Enviar Cotización por WhatsApp
+                </a>
+                <button id="btnCopiarCotizacion" class="btn-copy" type="button">
+                    📋 Copiar Detalle
+                </button>
+            </div>
+            
+            <!-- ENLACE RECOMENDADO DE MERCADO LIBRE -->
+            <div class="recomendado-ml">
+                ¿Prefieres comprar directamente con garantía y envío protegido? Visita nuestro <a href="https://mercadolibre.com.mx" target="_blank" rel="noopener noreferrer">canal oficial en Mercado Libre</a>.
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER ADICIONAL DE MERCADO LIBRE -->
+    <section class="ml-banner-section reveal">
+        <div class="ml-banner-text">
+            <span class="ml-badge-tag">Canal Oficial de Distribución</span>
+            <h3>También nos encuentras en Mercado Libre</h3>
+            <p>Compra protegida, envíos seguros a toda la República Mexicana y opciones de pago a meses sin intereses.</p>
+        </div>
+        <a href="https://mercadolibre.com.mx" target="_blank" rel="noopener noreferrer" class="btn-ml-store">
+            Ir a Tienda Mercado Libre →
+        </a>
+    </section>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="#inicio" class="logo-container">
+                    <div class="logo-box">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <div class="logo-text">Acryli<span>tec</span></div>
+                </a>
+                <p>Creamos objetos únicos en acrílico que cuentan tu historia con acabados de alta fidelidad. Calidad, creatividad y manufactura mexicana en cada pieza.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Productos</h4>
+                <ul>
+                    <li><a href="#productos">Letreros Neón</a></li>
+                    <li><a href="#productos">Llaveros Grabados</a></li>
+                    <li><a href="#productos">Regalos de Honor</a></li>
+                    <li><a href="#productos">Portarretratos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Colecciones</h4>
+                <ul>
+                    <li><a href="#galeria">Exhibidores Comerciales</a></li>
+                    <li><a href="#galeria">Decoración Residencial</a></li>
+                    <li><a href="#galeria">Protección Industrial</a></li>
+                    <li><a href="#galeria">Urnas y Buzones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Síguenos en Instagram">📷</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Síguenos en Facebook">f</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>© 2026 Acrylitec México. Todos los derechos reservados. Desarrollado en Proyecto de Residencias Profesionales.</div>
+            <button id="btnGestionarCookies" class="cookie-btn" type="button">Gestionar Cookies</button>
+        </div>
+    </footer>
+
+    <!-- MODAL LIGHTBOX PARA VISUALIZACIÓN DE ALTA RESOLUCIÓN -->
+    <div id="galleryModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="lightbox-content">
+            <button id="modalCloseBtn" class="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+            <div class="lightbox-img-box">
+                <img id="modalImage" src="" alt="Vista previa de producto Acrylitec">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="modalTitle">Título del Trabajo</h3>
+                <p id="modalDesc">Descripción detallada del material y técnica utilizada.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER DE CONSENTIMIENTO DE COOKIES (NORMATIVA LFPDPPP / RGPD) -->
+    <div id="cookieBanner" class="cookie-banner" role="region" aria-label="Aviso de privacidad y cookies">
+        <p>Utilizamos cookies esenciales y de análisis de rendimiento para garantizar el funcionamiento fluido de este sitio web y mejorar tu experiencia de navegación, conforme a las directrices de privacidad aplicables.</p>
+        <div class="cookie-actions">
+            <button id="btnRechazarCookies" class="btn-cookie-reject" type="button">Solo Esenciales</button>
+            <button id="btnAceptarCookies" class="btn-cookie-accept" type="button">Aceptar Todas</button>
+        </div>
+    </div>
+
+    <!-- Script Modular Asíncrono -->
+    <script src="script.js" defer></script>
+</body>
+</html>

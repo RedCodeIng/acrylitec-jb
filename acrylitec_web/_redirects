@@ -1,0 +1,12 @@
+# ==============================================================================
+# CLOUDFLARE PAGES - REGLAS DE REDIRECCIÓN Y RUTAS LIMPIAS
+# ==============================================================================
+
+# Normalización de rutas y alias canónicos
+/home          /                  301
+/index         /                  301
+/catalogo      /#productos        302
+/cotizar       /#cotizador        302
+/presupuesto   /#cotizador        302
+/galeria       /#galeria          302
+

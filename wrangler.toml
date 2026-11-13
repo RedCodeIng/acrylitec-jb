@@ -1,0 +1,5 @@
+# Cloudflare Pages Configuration
+name = "acrylitec-web"
+compatibility_date = "2026-11-12"
+pages_build_output_dir = "acrylitec_web"
+

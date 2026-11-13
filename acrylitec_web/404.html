@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página No Encontrada | Acrylitec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .error-code {
+            font-size: clamp(5rem, 15vw, 9rem);
+            font-weight: 800;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--color-dorado), var(--color-vino-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        .error-hero h1 {
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .error-hero p {
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo-container">
+            <div class="logo-box">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="logo-text">Acryli<span>tec</span></div>
+        </a>
+    </header>
+
+    <main class="error-hero">
+        <div class="error-code">404</div>
+        <h1>Pieza No Encontrada</h1>
+        <p>Parece que la página que buscas no existe o fue reubicada en nuestro taller digital de acrílico.</p>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+            <a href="/" class="btn-primary">Volver al Inicio →</a>
+            <a href="/#cotizador" class="btn-secondary">Cotizar Proyecto</a>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 30px; border-top: 1px solid var(--border-color);">
+        <p style="color: var(--text-muted); font-size: 0.85rem;">© 2026 Acrylitec México. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
