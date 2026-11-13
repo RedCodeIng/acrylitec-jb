@@ -2488,7 +2488,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function mostrarProyecto(indice) {
+    function mostrarProyecto(indice, autoCentrarMiniatura = true) {
         if (proyectosVisibles.length === 0) return;
         if (indice < 0) indice = proyectosVisibles.length - 1;
         if (indice >= proyectosVisibles.length) indice = 0;
@@ -2523,12 +2523,15 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         }
 
-        // Actualizar estado activo en miniaturas
+        // Actualizar estado activo en miniaturas sin desplazar la ventana principal
         const thumbs = thumbnailTrack ? thumbnailTrack.querySelectorAll('.thumb-card') : [];
         thumbs.forEach((t, i) => {
             if (i === indiceActivo) {
                 t.classList.add('active');
-                t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                if (autoCentrarMiniatura && thumbnailTrack) {
+                    const scrollDestino = t.offsetLeft - (thumbnailTrack.clientWidth / 2) + (t.clientWidth / 2);
+                    thumbnailTrack.scrollTo({ left: Math.max(0, scrollDestino), behavior: 'smooth' });
+                }
             } else {
                 t.classList.remove('active');
             }
@@ -2536,11 +2539,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (btnSpotlightPrev) {
-        btnSpotlightPrev.addEventListener('click', () => mostrarProyecto(indiceActivo - 1));
+        btnSpotlightPrev.addEventListener('click', () => mostrarProyecto(indiceActivo - 1, true));
     }
 
     if (btnSpotlightNext) {
-        btnSpotlightNext.addEventListener('click', () => mostrarProyecto(indiceActivo + 1));
+        btnSpotlightNext.addEventListener('click', () => mostrarProyecto(indiceActivo + 1, true));
     }
 
     // Filtrado interactivo de categorías
@@ -2558,12 +2561,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             indiceActivo = 0;
             renderizarMiniaturas();
-            mostrarProyecto(0);
+            mostrarProyecto(0, true);
         });
     });
 
     renderizarMiniaturas();
-    mostrarProyecto(0);
+    // Inicialización al cargar: autoCentrarMiniatura en false para no alterar el scroll del Hero
+    mostrarProyecto(0, false);
 
     // Conexión directa desde la Galería al Cotizador
     window.cotizarDesdeGaleria = function (tipo, tamano) {
@@ -2824,6 +2828,11 @@ document.addEventListener('DOMContentLoaded', () => {
         toastTimeout = setTimeout(() => {
             toast.classList.remove('show');
         }, 3200);
+    }
+
+    // Asegurar que al abrir la página inicie siempre en la cabecera / Hero si no hay ancla en la URL
+    if (!window.location.hash) {
+        window.scrollTo(0, 0);
     }
 });
 ```
