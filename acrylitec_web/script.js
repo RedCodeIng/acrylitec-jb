@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function inicializarTema() {
         const temaGuardado = localStorage.getItem('acrylitec_theme');
         const prefiereOscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
+
         let temaFinal = 'dark';
         if (temaGuardado) {
             temaFinal = temaGuardado;
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleMenuMovil() {
         if (!hamburgerBtn || !mobileDrawer) return;
         const estaAbierto = mobileDrawer.classList.contains('open');
-        
+
         if (estaAbierto) {
             mobileDrawer.classList.remove('open');
             hamburgerBtn.classList.remove('active');
@@ -426,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrarProyecto(0);
 
     // Conexión directa desde la Galería al Cotizador
-    window.cotizarDesdeGaleria = function(tipo, tamano) {
+    window.cotizarDesdeGaleria = function (tipo, tamano) {
         const selectProducto = document.getElementById('tipoProducto');
         const selectTamano = document.getElementById('tamano');
         const cotizadorSec = document.getElementById('cotizador');
@@ -555,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnCopiar.addEventListener('click', () => {
             const data = obtenerDetalleCotizacion(precioActualAnimado);
             const texto = `Cotización Acrylitec México:\nProducto: ${data.producto}\nTamaño: ${data.tamano}\nCantidad: ${data.cantidad} pza(s)\nTotal Estimado: ${data.total}`;
-            
+
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(texto).then(() => {
                     mostrarToast('¡Cotización copiada al portapapeles!');
